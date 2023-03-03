@@ -128,21 +128,17 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
- /* Esercizio Bonus Sopra i 768px e fino ai 1160px*/
+/* Esercizio Bonus Sopra i 768px e fino ai 1160px*/
 
- @media screen  and (max-width: 1160px) {
-.steps, .site-header{
-    width: 100%;
-}
-
-.container{
+@media screen  and (max-width: 1160px) {
+.steps, .site-header, .container{
     width: 100%;
 }
 } 
 
 /* Dispositivo da 768px a 480px */
 
- @media screen  and (min-width: 768px) {
+@media screen  and (min-width: 768px) {
 
 .container{
     width: 768px;
@@ -151,3 +147,44 @@ img {
 
 /* Dispositivo da 480px in giù */
 
+@media screen and (max-width: 480px) {
+.row{
+    display: block;
+}
+
+h1{
+    font-size: 2.2rem;
+}
+
+h2{
+    font-size: 1.7rem;
+}
+
+h3{
+    font-size: 1.2rem;
+}
+
+.lessons .col, .steps .col{
+    padding-bottom: 70px;
+}
+
+/* azzerati i margini ed il padding inferiore perchè nella versione mobile il gap era molto inferiore */
+.steps {
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.why-us .col-left {
+    margin-bottom: 50px;
+}
+
+.why-us .col-right, .why-us .col-left, .container, .lessons .col, .steps .col{
+    width: 100%;
+}
+
+.why-us{
+    background-color: rgb(57, 57, 57);
+    padding: 3rem 0;
+    margin-bottom: 0;
+}
+}
