@@ -127,3 +127,27 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+
+ /* Esercizio Bonus Sopra i 768px e fino ai 1160px*/
+
+ @media screen  and (max-width: 1160px) {
+.steps, .site-header{
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+}
+} 
+
+/* Dispositivo da 768px a 480px */
+
+ @media screen  and (min-width: 768px) {
+
+.container{
+    width: 768px;
+}
+} 
+
+/* Dispositivo da 480px in giù */
+
