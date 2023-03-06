@@ -130,7 +130,7 @@ img {
 
 /* Esercizio Bonus Sopra i 768px e fino ai 1160px*/
 
-@media screen  and (max-width: 1160px) {
+@media screen  and (max-width: 1140px) {
 .steps, .site-header, .container{
     width: 100%;
 }
@@ -138,10 +138,10 @@ img {
 
 /* Dispositivo da 768px a 480px */
 
-@media screen  and (min-width: 768px) {
+@media screen  and (max-width: 768px) {
 
 .container{
-    width: 768px;
+    width: 100%;
 }
 } 
 
